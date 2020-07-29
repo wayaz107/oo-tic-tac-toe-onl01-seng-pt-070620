@@ -91,8 +91,8 @@ end
 
   def over?
  won? || draw? || full?
- end 
- 
+ end
+
 
 
 def winner
