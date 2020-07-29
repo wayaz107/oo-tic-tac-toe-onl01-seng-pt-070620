@@ -68,11 +68,11 @@ end
   end
 
 def won?
-    a = WIN_COMBINATIONS.find{
+    a = WIN_COMBINATIONS.each
       |combo|
       @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X"
     }
-    b = WIN_COMBINATIONS.find{
+    b = WIN_COMBINATIONS.each{
       |combo|
       @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
     }
