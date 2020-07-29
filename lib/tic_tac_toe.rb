@@ -68,7 +68,7 @@ end
   end
 
 def won?
-    a = WIN_COMBINATIONS.find
+    a = WIN_COMBINATIONS.find{
       |combo|
       @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X"
     }
